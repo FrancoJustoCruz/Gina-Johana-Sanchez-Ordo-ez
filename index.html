@@ -1,43 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
-    
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <meta name="google-site-verification" content="0ExsUNFTARlyyAvEw-hZIeJIyQDXVSq6CKFMAw4bWFA" />
-    <link rel="stylesheet" href="style.css">
-    <title>Gina Johana Sanchez Ordoñez</title>
-</head>
-<body>
-    <header>
-        <a href="#" class="logo">Gina</a>
+<html lang="es">
 
-        <nav>
-            <a href="#" class="active"> Inicio</a>
-            <a href="#" >Servicios</a>
-            <a href="#" >Habilidades</a>
-            <a href="#" >Educación</a>
-            <a href="#" >Experiencia</a>
-            <a href="#" >Contacto</a>
-        </nav>
-    </header>
-    <section class="home">
-        <div class="home-img">
-            <img src="main.jpg" alt="">
-        </div>
-        <div class="home-content">
-            <h1>Hola, soy <span>Gina</span></h1>
-            <h3 class="typing-text">I'm a <span></span></h3>
-            <p>Hola, mi nombre es Gina y soy estudiante de Administración en la Universidad Católica San Pablo (UCSP). Me considero una persona responsable, organizada y con muchas ganas de seguir aprendiendo sobre el mundo empresarial. Me interesa especialmente el desarrollo de estrategias que impulsen la eficiencia y el crecimiento de las organizaciones. Además, disfruto trabajar en equipo y participar en proyectos que me permitan aplicar mis conocimientos en la práctica. sunt commodi in ipsa repudiandae debitis deleniti blanditiis quibusdam quaerat neque asperiores ea.</p>
-            <div class="social-icons">
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            </div>
-            <a href="#" class="btn">Contratame</a>
-        </div>
-    </section>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Soy Gina Johana Sánchez Ordoñez, estudiante de Administración en la Universidad Católica San Pablo (UCSP). Me apasiona la gestión empresarial y el desarrollo de estrategias para el crecimiento organizacional.">
+  <meta name="keywords"
+    content="Gina Sanchez, Administración UCSP, estudiante UCSP, gestión empresarial, proyectos universitarios, administración de empresas">
+  <meta name="author" content="Gina Johana Sánchez Ordoñez">
+  <meta name="google-site-verification" content="0ExsUNFTARlyyAvEw-hZIeJIyQDXVSq6CKFMAw4bWFA" />
+
+  <title>Gina Johana Sánchez Ordoñez</title>
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <a href="#inicio" class="logo">Gina</a>
+
+    <!-- Botón de menú hamburguesa -->
+    <div id="menu-icon" class="fas fa-bars"></div>
+
+    <nav id="navbar">
+      <a href="#inicio" class="active">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#educacion">Educación</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section id="inicio" class="home">
+    <div class="home-img">
+      <img src="main.jpg" alt="Gina Johana Sánchez Ordoñez, estudiante de Administración en la UCSP">
+    </div>
+
+    <div class="home-content">
+      <h1>Hola, soy <span>Gina Johana Sánchez Ordoñez</span></h1>
+      <h2>Estudiante de Administración en la UCSP</h2>
+
+      <h3 class="typing-text">Soy <span></span></h3>
+
+      <p>
+        Hola, mi nombre es Gina y soy estudiante de Administración en la Universidad Católica San Pablo (UCSP).
+        Me considero una persona responsable, organizada y con muchas ganas de seguir aprendiendo sobre el mundo empresarial.
+        Me interesa especialmente el desarrollo de estrategias que impulsen la eficiencia y el crecimiento de las organizaciones.
+        Además, disfruto trabajar en equipo y participar en proyectos que me permitan aplicar mis conocimientos en la práctica.
+      </p>
+
+      <div class="social-icons">
+        <a href="https://www.linkedin.com" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://twitter.com" aria-label="X/Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://instagram.com" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+
+      <a href="#" class="btn">Contáctame</a>
+    </div>
+  </section>
+
+  <script>
+    // Menú responsive
+    const menuIcon = document.querySelector('#menu-icon');
+    const navbar = document.querySelector('#navbar');
+
+    menuIcon.onclick = () => {
+      navbar.classList.toggle('active');
+      menuIcon.classList.toggle('fa-times');
+    };
+  </script>
 </body>
+
 </html>
